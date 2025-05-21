@@ -11,7 +11,7 @@ export default function Navbar() {
                 <li> <a href = "#about" className = "hover:text-site ease-in duration-150 hover:text-shadow-black"> About </a> </li>
                 <li> <a href = "#skills" className = "hover:text-site ease-in duration-150 hover:text-shadow-black"> Skills </a> </li>
                 <li> <a href = "#projects" className = "hover:text-site ease-in duration-150 hover:text-shadow-black"> Projects </a> </li>
-                <li> <a href = "#" className = "hover:text-site ease-in duration-150 hover:text-shadow-black"> Contact </a> </li>
+                <li> <a href = "#contact" className = "hover:text-site ease-in duration-150 hover:text-shadow-black"> Contact </a> </li>
             </ul>
 
         </div>
