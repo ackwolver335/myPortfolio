@@ -48,11 +48,11 @@ export default function Projects() {
                         {/* Go Through Links */}
                         <div className="flex flex-row justify-between items-center">
 
-                            <a href = "#" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/inotebookFD" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
                                 View Project <ArrowRight className = "md:w-5 md:h-5 md:ml-1 xl:h-5" />
                             </a>
 
-                            <a href = "#" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/inotebookFD" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
                                 Source Code <Code2Icon className = "md:w-5 md:h-5 md:ml-1 xl:h-5" />
                             </a>
 
@@ -87,11 +87,11 @@ export default function Projects() {
                         {/* Go Through Links */}
                         <div className="flex flex-row justify-between items-center ">
 
-                            <a href = "#" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/SentimentAnalysis-DL" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
                                 View Project <ArrowRight className = "md:w-5 md:h-5 md:ml-1 xl:h-5" />
                             </a>
 
-                            <a href = "#" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/SentimentAnalysis-DL" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
                                 Source Code <Code2Icon className = "md:w-5 md:h-5 md:ml-1 xl:h-5" />
                             </a>
 
@@ -126,11 +126,11 @@ export default function Projects() {
                         {/* Go Through Links */}
                         <div className="flex flex-row justify-between items-center ">
 
-                            <a href = "#" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/textUtils" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
                                 View Project <ArrowRight className = "md:w-5 md:h-5 md:ml-1 xl:h-5" />
                             </a>
 
-                            <a href = "#" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/textUtils" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
                                 Source Code <Code2Icon className = "md:w-5 md:h-5 md:ml-1 xl:h-5" />
                             </a>
 
@@ -165,11 +165,11 @@ export default function Projects() {
                         {/* Go Through Links */}
                         <div className="flex flex-row justify-between items-center ">
 
-                            <a href = "#" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-base">
+                            <a href = "https://github.com/ackwolver335/Image2pdf-GUI" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-base">
                                 View Project <ArrowRight className = "md:w-5 md:h-5 md:ml-1 xl:w-6 xl:h-6" />
                             </a>
 
-                            <a href = "#" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-base">
+                            <a href = "https://github.com/ackwolver335/Image2pdf-GUI" className = "flex md:text-sm font-inter md:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-base">
                                 Source Code <Code2Icon className = "md:w-5 md:h-5 md:ml-1 xl:w-6 xl:h-6" />
                             </a>
 
@@ -182,7 +182,7 @@ export default function Projects() {
             </div>
 
             {/* Button regarding further projects go through Link */}
-            <a href = "#" className = "flex flex-row font-inter hover:font-semibold md:text-sm xl:text-base xl:px-4 hover:scale-105 items-center bg-site/90 text-white md:mt-3 xl:mt-6 md:px-3 md:py-2 shadow-md hover:shadow-xl hover:bg-site rounded-md ease-in duration-150">
+            <a href = "https://github.com/ackwolver335?tab=repositories" className = "flex flex-row font-inter hover:font-semibold md:text-sm xl:text-base xl:px-4 hover:scale-105 items-center bg-site/90 text-white md:mt-3 xl:mt-6 md:px-3 md:py-2 shadow-md hover:shadow-xl hover:bg-site rounded-md ease-in duration-150">
                 View all Projects <ArrowRight className = "text-white md:w-5 md:ml-1" />
             </a>
 
