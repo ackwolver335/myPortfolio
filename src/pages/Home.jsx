@@ -1,6 +1,7 @@
 // requried components
 import MainSection from '../components/MainSection'
 import About from '../components/About'
+import Skills from '../components/Skills'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
 
       <MainSection />
       <About />
+      <Skills />
 
     </div>
   )
