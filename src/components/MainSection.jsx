@@ -11,7 +11,7 @@ export default function MainSection() {
 
       <div className="goThrough font-poppins md:text-xs lg:text-sm xl:text-base md:space-x-4 xl:space-x-6">
 
-        <a href="#">
+        <a href="#projects">
           <button className="bg-white md:px-3 md:py-2 md:rounded-md hover:scale-105 ease-in-out duration-100 shadow-lg cursor-pointer border border-white text-site"> View My Work </button>
         </a>
 

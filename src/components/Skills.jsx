@@ -18,50 +18,50 @@ export default function Skills() {
 
                 <div className="skills flex flex-col items-center md:gap-3 bg-white shadow-md md:px-8 lg:px-12 md:py-4 lg:py-6 md:pb-8 xl:pb-14 rounded-lg cursor-default hover:scale-105 hover:shadow-lg ease-in duration-150">
                     <Code className = "md:p-3 rounded-full text-site md:bg-site/5 lg:bg-site/10 md:w-14 md:h-14" />
-                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl text-inter font-bold"> Web Development </h3>
-                    <h5 className = "text-poppins text-secondary/60 md:font-thin lg:font-normal md:text-base xl:text-lg xl:font-medium"> HTML, CSS & Javascript </h5>
+                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl font-inter font-bold"> Web Development </h3>
+                    <h5 className = "font-poppins text-secondary/60 md:font-normal md:text-base xl:text-lg xl:font-medium"> HTML, CSS & Javascript </h5>
                 </div>
 
                 <div className="skills flex flex-col items-center md:gap-3 bg-white shadow-md md:px-8 lg:px-12 md:py-4 lg:py-6 md:pb-8 xl:pb-14 rounded-lg cursor-default hover:scale-105 hover:shadow-lg ease-in duration-150">
                     <LayoutDashboard className = "md:p-3 rounded-md text-site md:bg-site/5 lg:bg-site/10 md:w-14 md:h-14" />
-                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl text-inter font-bold"> UI/UX Design </h3>
-                    <h5 className = "text-poppins text-secondary/60 md:font-thin lg:font-normal md:text-base xl:text-lg xl:font-medium"> Uizard & Canva </h5>
+                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl font-inter font-bold"> UI/UX Design </h3>
+                    <h5 className = "font-poppins text-secondary/60 md:font-normal md:text-base xl:text-lg xl:font-medium"> Uizard & Canva </h5>
                 </div>
 
                 <div className="skills flex flex-col items-center md:gap-3 bg-white shadow-md md:px-8 lg:px-12 md:py-4 lg:py-6 md:pb-8 xl:pb-14 rounded-lg cursor-default hover:scale-105 hover:shadow-lg ease-in duration-150">
                     <Cpu className = "md:p-3 rounded-full text-site md:bg-site/5 lg:bg-site/10 md:w-14 md:h-14" />
-                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl text-inter font-bold"> Backend Dev </h3>
-                    <h5 className = "text-poppins text-secondary/60 md:font-thin lg:font-normal md:text-base xl:text-lg xl:font-medium"> Next.js & Express.js </h5>
+                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl font-inter font-bold"> Backend Dev </h3>
+                    <h5 className = "font-poppins text-secondary/60 md:font-normal md:text-base xl:text-lg xl:font-medium"> Next.js & Express.js </h5>
                 </div>
 
                 <div className="skills flex flex-col items-center md:gap-3 bg-white shadow-md md:px-8 lg:px-12 md:py-4 lg:py-6 md:pb-8 xl:pb-14 rounded-lg cursor-default hover:scale-105 hover:shadow-lg ease-in duration-150">
                     <Zap className = "md:p-3 rounded-full text-site md:bg-site/5 lg:bg-site/10 md:w-14 md:h-14" />
-                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl text-inter font-bold"> Performance Eff. </h3>
-                    <h5 className = "text-poppins text-secondary/60 md:font-thin lg:font-normal md:text-base xl:text-lg xl:font-medium"> Speed & Efficiency </h5>
+                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl font-inter font-bold"> Performance Eff. </h3>
+                    <h5 className = "font-poppins text-secondary/60 md:font-normal md:text-base xl:text-lg xl:font-medium"> Speed & Efficiency </h5>
                 </div>
 
                 <div className="skills flex flex-col items-center md:gap-3 bg-white shadow-md md:px-8 lg:px-12 md:py-4 lg:py-6 md:pb-8 xl:pb-14 rounded-lg cursor-default hover:scale-105 hover:shadow-lg ease-in duration-150">
                     <MessageCircle className = "md:p-3 rounded-lg text-site md:bg-site/5 lg:bg-site/10 md:w-14 md:h-14" />
-                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl text-inter font-bold"> Communication </h3>
-                    <h5 className = "text-poppins text-secondary/60 md:font-thin lg:font-normal md:text-base xl:text-lg xl:font-medium"> Clear & Effective </h5>
+                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl font-inter font-bold"> Communication </h3>
+                    <h5 className = "font-poppins text-secondary/60 md:font-normal md:text-base xl:text-lg xl:font-medium"> Clear & Effective </h5>
                 </div>
 
                 <div className="skills flex flex-col items-center md:gap-3 bg-white shadow-md md:px-8 lg:px-12 md:py-4 lg:py-6 md:pb-8 xl:pb-14 rounded-lg cursor-default hover:scale-105 hover:shadow-lg ease-in duration-150">
                     <SlidersHorizontal className = "md:p-3 rounded-xl text-site md:bg-site/5 lg:bg-site/10 md:w-14 md:h-14" />
-                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl text-inter font-bold"> Problem Solving </h3>
-                    <h5 className = "text-poppins text-secondary/60 md:font-thin lg:font-normal md:text-base xl:text-lg xl:font-medium"> Analytical Thinking </h5>
+                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl font-inter font-bold"> Problem Solving </h3>
+                    <h5 className = "font-poppins text-secondary/60 md:font-normal md:text-base xl:text-lg xl:font-medium"> Analytical Thinking </h5>
                 </div>
 
                 <div className="skills flex flex-col items-center md:gap-3 bg-white shadow-md md:px-8 lg:px-12 md:py-4 lg:py-6 md:pb-8 xl:pb-14 rounded-lg cursor-default hover:scale-105 hover:shadow-lg ease-in duration-150">
                     <Clock className = "md:p-3 rounded-full text-site md:bg-site/5 lg:bg-site/10 md:w-14 md:h-14" />
-                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl text-inter font-bold"> Time Management </h3>
-                    <h5 className = "text-poppins text-secondary/60 md:font-thin lg:font-normal md:text-base xl:text-lg xl:font-medium"> Efficient & Organized </h5>
+                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl font-inter font-bold"> Time Management </h3>
+                    <h5 className = "font-poppins text-secondary/60 md:font-normal md:text-base xl:text-lg xl:font-medium"> Efficient & Organized </h5>
                 </div>
 
                 <div className="skills flex flex-col items-center md:gap-3 bg-white shadow-md md:px-8 lg:px-12 md:py-4 lg:py-6 md:pb-8 xl:pb-14 rounded-lg cursor-default hover:scale-105 hover:shadow-lg ease-in duration-150">
                     <Users className = "md:p-3 rounded-lg text-site md:bg-site/5 lg:bg-site/10 md:w-14 md:h-14" />
-                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl text-inter font-bold"> Team Collaboration </h3>
-                    <h5 className = "text-poppins text-secondary/60 md:font-thin lg:font-normal md:text-base xl:text-lg xl:font-medium"> Leadership & Support </h5>
+                    <h3 className = "md:text-xl text-secondary/80 xl:text-2xl font-inter font-bold"> Team Collaboration </h3>
+                    <h5 className = "font-poppins text-secondary/60 md:font-normal md:text-base xl:text-lg xl:font-medium"> Leadership & Support </h5>
                 </div>
 
             </div>
