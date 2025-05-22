@@ -13,13 +13,13 @@ export default function Contact() {
             {/* Para regarding Section's Intro */}
             <h4 className="text-secondary/60 font-poppins md:text-sm xl:text-base"> Have a project in mind or want to collaborate? Feel freet to reach out! </h4>
 
-            <div className="contactSection md:grid-cols-1 lg:grid-cols-2 md:pt-8 xl:pt-10">
+            <div className="contactSection grid md:grid-cols-1 lg:grid-cols-2 md:pt-8 xl:pt-10 md:gap-y-8 lg:gap-x-14 xl:gap-x-20">
 
-                <div className="contactInfo flex flex-col justify-start bg-white md:rounded-md md:shadow-md md:px-8 md:py-6 w-100 md:gap-5">
+                <div className="contactInfo flex flex-col justify-start bg-white md:rounded-md lg:rounded-xl lg:shadow-lg md:shadow-md md:px-8 md:py-6 w-100 md:gap-5 xl:gap-7">
 
-                    <h3 className="md:text-xl font-inter md:font-semibold text-secondary/90"> Contact Information </h3>
+                    <h3 className="md:text-xl lg:text-2xl font-inter md:font-semibold text-secondary/90"> Contact Information </h3>
 
-                    <div className="details flex flex-col justify-start md:gap-6">
+                    <div className="details flex flex-col justify-start md:gap-5 xl:gap-7">
 
                         {/* Email Detail's Block */}
                         <div className="emailID flex flex-row justify-start md:gap-5 items-center">
@@ -60,9 +60,9 @@ export default function Contact() {
                     </div>
 
                     {/* Social Links */}
-                    <div className="socialIcon md:space-y-3">
+                    <div className="socialIcon md:space-y-3 lg:space-y-5 xl:space-y-4">
 
-                        <h4 className="md:text-lg font-inter text-secondary/80 font-semibold"> Connect With Me </h4>
+                        <h4 className="md:text-lg lg:text-xl font-inter text-secondary/80 font-semibold"> Connect With Me </h4>
 
                         <div className="flex flex-row md:gap-4">
 
@@ -90,6 +90,43 @@ export default function Contact() {
                         </div>
 
                     </div>
+
+                </div>
+
+                {/* Block in order to retrive details from the User */}
+                <div className="detailedForm flex flex-col justify-start bg-white md:rounded-md lg:rounded-xl lg:shadow-lg md:shadow-md md:px-8 md:py-6 w-100 md:gap-5">
+
+                    <h3 className="md:text-xl lg:text-2xl font-inter md:font-semibold text-secondary/90"> Send Me a Message </h3>
+
+                    {/* form regarding information retrival */}
+                    <form className="flex flex-col md:gap-y-3 lg:gap-y-5 justify-start">
+                        
+                        {/* userName */}
+                        <div className="flex flex-col justify-start md:gap-y-2">
+                            <label htmlFor="userName" className="font-inter font-normal text-secondary/80 md:text-sm lg:text-base"> Name </label>
+                            <input type="text" placeholder="Your Name" id="userName" className = "font-poppins md:text-sm border-2 md:opacity-80  border-secondary/50 focus:border-2 focus:border-site focus:outline-none md:px-3 md:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required />
+                        </div>
+
+                        {/* user's Mail */}
+                        <div className="flex flex-col justify-start md:gap-y-2">
+                            <label htmlFor="userMail" className="font-inter font-normal text-secondary/80 md:text-sm lg:text-base"> Email </label>
+                            <input type="email" placeholder="your.name@gmail.com" id="userMail" className = "font-poppins md:text-sm border-2 md:opacity-80  border-secondary/50 focus:border-2 focus:border-site focus:outline-none md:px-3 md:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required />
+                        </div>
+
+                        {/* user's Subject or Purpose */}
+                        <div className="flex flex-col justify-start md:gap-y-2">
+                            <label htmlFor="userSubject" className="font-inter font-normal text-secondary/80 md:text-sm lg:text-base"> Subject </label>
+                            <input type="text" placeholder="Subject/Purpose" id="userSubject" className = "font-poppins md:text-sm border-2 md:opacity-80  border-secondary/50 focus:border-2 focus:border-site focus:outline-none md:px-3 md:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required />
+                        </div>
+
+                        <div className="flex flex-col justify-start md:gap-y-2">
+                            <label htmlFor="userMessage" className="font-inter font-normal text-secondary/80 md:text-sm lg:text-base"> Message </label>
+                            <textarea type="text" rows = "4" placeholder="Your Message here..." id="userMessage" className = "resize-none font-poppins md:text-sm border-2 md:opacity-80  border-secondary/50 focus:border-2 focus:border-site focus:outline-none md:px-3 md:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" > </textarea>
+                        </div>
+
+                        <button type="button" className = "font-inter bg-site/70 md:py-2 md:rounded-md lg:rounded-lg hover:rounded-xl hover:bg-site/90 cursor-pointer md:shadow-md hover:shadow-lg ease-in duration-150 text-white md:text-sm md:mt-2"> Send Message </button>
+
+                    </form>
 
                 </div>
 
