@@ -15,7 +15,7 @@ export default function MainSection() {
           <button className="bg-white md:px-3 md:py-2 md:rounded-md hover:scale-105 ease-in-out duration-100 shadow-lg cursor-pointer border border-white text-site"> View My Work </button>
         </a>
 
-        <a href="#">
+        <a href="#contact">
           <button className="md:px-3 md:py-2 md:rounded-md hover:scale-105 ease-in-out duration-100 shadow-lg cursor-pointer border border-white text-white"> Contact Me </button>
         </a>
 

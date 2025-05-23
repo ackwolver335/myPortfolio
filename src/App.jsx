@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 
 // import the pages that are used here
 import Home from './pages/Home'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+
+      {/* footer for page further Reference */}
+      <Footer />
 
     </>
   )
