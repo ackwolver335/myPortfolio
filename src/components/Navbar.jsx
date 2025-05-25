@@ -30,9 +30,9 @@ export default function Navbar() {
     }
 
     return (
-        <div className="navBar z-20 fixed w-full bg-white/80 backdrop-blur-2xl flex md:flex-row justify-between items-center xsz:py-4 xsz:px-5 md:px-5 xl:px-9 2xl:px-14 2xl:py-5 xl:py-4 xsz:shadow-md xl:shadow-lg">
+        <div className="navBar z-20 fixed w-full xsz:bg-white/70 xsz:backdrop-blur-md md:bg-white/80 md:backdrop-blur-2xl flex md:flex-row justify-between items-center xsz:py-4 xsz:px-5 md:px-5 xl:px-9 2xl:px-14 2xl:py-5 xl:py-4 xsz:shadow-md xl:shadow-lg">
 
-            <h1 className="xsz:text-xl xl:text-2xl xsz:font-bold text-site font-poppins cursor-pointer"> Portfolio </h1>
+            <h1 className="xsz:text-lg sm:text-xl xl:text-2xl xsz:font-bold text-site font-poppins cursor-pointer"> Portfolio </h1>
 
             {/* Menu Closing Icon */}
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-x-square xsz:w-8 sm:w-9 text-site z-20 xsz:right-5 absolute active:scale-95 xsz:-translate-y-16 md:hidden" viewBox="0 0 16 16" onClick={closeMenu}>
