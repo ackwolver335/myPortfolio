@@ -2,12 +2,12 @@ import ProfilePic from '../assets/ProfilePic.png'
 
 export default function About() {
     return (
-        <div className="aboutComp xsz:py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 flex flex-col xsz:gap-y-5 md:gap-y-7" id="about">
+        <div className="aboutComp xsz:py-14 sm:py-18 md:py-16 lg:py-20 xl:py-24 flex flex-col xsz:gap-y-5 md:gap-y-7" id="about">
 
             {/* Initial Heading of About Section */}
             <div className="mainHead flex flex-col items-center xsz:gap-y-1 md:gap-2 lg:gap-3">
                 <h1 className="font-inter xsz:text-2xl sm:text-3xl xl:text-4xl text-secondary font-bold tracking-wide"> About Me </h1>
-                <div className="xsz:h-1 xsz:w-20 xsz:rounded-xl md:h-[3px] md:w-20 lg:w-24 xl:w-28 md:rounded-md xsz:drop-shadow-md md:drop-shadow-lg bg-site"> </div>
+                <div className="xsz:h-1 xsz:w-20 sm:w-24 xsz:rounded-xl md:h-[3px] md:w-20 lg:w-24 xl:w-28 md:rounded-md xsz:drop-shadow-md md:drop-shadow-lg bg-site"> </div>
             </div>
 
             {/* Second Section regarding Image and Information */}
