@@ -12,7 +12,7 @@
 
 📌 Below I have provided the link regarding the project, I have deployed live 😉
 
-▶️ [Checkout Site]()
+▶️ [Checkout Site](https://my-portfolio-abhay-chaudharys-projects.vercel.app/)
 
 ## 📑 Features 
 
@@ -51,7 +51,7 @@
 1. Clone this project via its *Link* through **GitHub** 📦
 
 ```bash
-git clone repository_link_here
+git clone https://github.com/ackwolver335/myPortfolio.git
 ```
 
 2. Install the required node modules afterwards 📚
