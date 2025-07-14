@@ -1,6 +1,21 @@
-import { Phone, Mail, MapPin, Twitter } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
+import { useState } from 'react'
+import { emailjs } from '@emailjs/browser'
 
 export default function Contact() {
+
+    //
+
+    // setting some state regarding EmailJS service's data
+    const [userName,setUserName] = useState('');
+    const [userEmail,setUserEmail] = useState('');
+    const [userSubject,setUserSubject] = useState('');
+    const [userMessage,setMessage] = useState('');
+
+    // details regarding Email JS Services
+    const serviceID = "service_ay3pp3s";
+    const publicKey = "9RWkKmcNIlGUX9B0O";
+
     return (
         <div className="contentContainer xsz:py-14 sm:py-18 xsz:gap-y-5 md:py-16 lg:py-20 xl:py-24 flex flex-col md:gap-4 lg:gap-6 xl:gap-7 items-center bg-tempBG" id="contact">
 
