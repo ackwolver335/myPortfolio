@@ -48,11 +48,11 @@ export default function Projects() {
                         {/* Go Through Links */}
                         <div className="flex flex-row justify-between items-center">
 
-                            <a href = "https://github.com/ackwolver335/inotebookFD" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/inotebookFD" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]" target="_blank">
                                 View Project <ArrowRight className = "xsz:w-5 xsz:h-5 xsz:active:ml-2 sm:active:ml-0 md:ml-1 xl:h-5" />
                             </a>
 
-                            <a href = "https://github.com/ackwolver335/inotebookFD" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/inotebookFD" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]" target="_blank">
                                 Source Code <Code2Icon className = "xsz:w-5 xsz:h-5 xsz:active:ml-2 sm:active:ml-0 md:ml-1 xl:h-5" />
                             </a>
 
@@ -87,11 +87,11 @@ export default function Projects() {
                         {/* Go Through Links */}
                         <div className="flex flex-row justify-between items-center ">
 
-                            <a href = "https://github.com/ackwolver335/SentimentAnalysis-DL" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/SentimentAnalysis-DL" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]" target="_blank">
                                 View Project <ArrowRight className = "xsz:w-5 xsz:h-5 xsz:active:ml-2 sm:active:ml-0 md:ml-1 xl:h-5" />
                             </a>
 
-                            <a href = "https://github.com/ackwolver335/SentimentAnalysis-DL" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/SentimentAnalysis-DL" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]" target="_blank">
                                 Source Code <Code2Icon className = "xsz:w-5 xsz:h-5 xsz:active:ml-2 sm:active:ml-0 md:ml-1 xl:h-5" />
                             </a>
 
@@ -126,11 +126,11 @@ export default function Projects() {
                         {/* Go Through Links */}
                         <div className="flex flex-row justify-between items-center ">
 
-                            <a href = "https://github.com/ackwolver335/textUtils" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/textUtils" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]" target="_blank">
                                 View Project <ArrowRight className = "xsz:w-5 xsz:h-5 xsz:active:ml-2 sm:active:ml-0 md:ml-1 xl:h-5" />
                             </a>
 
-                            <a href = "https://github.com/ackwolver335/textUtils" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]">
+                            <a href = "https://github.com/ackwolver335/textUtils" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-[13px]" target="_blank">
                                 Source Code <Code2Icon className = "xsz:w-5 xsz:h-5 xsz:active:ml-2 sm:active:ml-0 md:ml-1 xl:h-5" />
                             </a>
 
@@ -165,11 +165,11 @@ export default function Projects() {
                         {/* Go Through Links */}
                         <div className="flex flex-row justify-between items-center ">
 
-                            <a href = "https://github.com/ackwolver335/Image2pdf-GUI" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-base">
+                            <a href = "https://github.com/ackwolver335/Image2pdf-GUI" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-base" target="_blank">
                                 View Project <ArrowRight className = "xsz:w-5 xsz:h-5 xsz:active:ml-2 sm:active:ml-0 md:ml-1 xl:h-5" />
                             </a>
 
-                            <a href = "https://github.com/ackwolver335/Image2pdf-GUI" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-base">
+                            <a href = "https://github.com/ackwolver335/Image2pdf-GUI" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold text-secondary/90 hover:text-site hover:scale-105 hover:font-bold ease-in duration-150 xl:text-base" target="_blank">
                                 Source Code <Code2Icon className = "xsz:w-5 xsz:h-5 xsz:active:ml-2 sm:active:ml-0 md:ml-1 xl:h-5" />
                             </a>
 
@@ -182,7 +182,7 @@ export default function Projects() {
             </div>
 
             {/* Button regarding further projects go through Link */}
-            <a href = "https://github.com/ackwolver335?tab=repositories" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold sm:text-base flex-row font-inter hover:font-semibold xl:text-base xl:px-4 hover:scale-105 items-center bg-site/90 text-white xsz:px-2 xsz:py-1 sm:py-2 sm:px-3 xsz:mt-4 sm:mt-6 md:mt-3 xl:mt-6 md:px-3 md:py-2 xsz:shadow-lg md:shadow-md hover:shadow-xl hover:bg-site active:scale-95 rounded-md ease-in duration-150">
+            <a href = "https://github.com/ackwolver335?tab=repositories" className = "flex xsz:text-sm font-inter xsz:font-bold sm:font-semibold sm:text-base flex-row font-inter hover:font-semibold xl:text-base xl:px-4 hover:scale-105 items-center bg-site/90 text-white xsz:px-2 xsz:py-1 sm:py-2 sm:px-3 xsz:mt-4 sm:mt-6 md:mt-3 xl:mt-6 md:px-3 md:py-2 xsz:shadow-lg md:shadow-md hover:shadow-xl hover:bg-site active:scale-95 rounded-md ease-in duration-150" target="_blank">
                 View all Projects <ArrowRight className = "text-white md:w-5 md:ml-1" />
             </a>
 
