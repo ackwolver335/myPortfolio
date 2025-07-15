@@ -1,23 +1,102 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
 import { useState } from 'react'
-import { emailjs } from '@emailjs/browser'
+import Alert from './Alert';
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
 
-    //
+    // defining use state for alert component
+    const [alert, setAlert] = useState({
+        show: false,
+        type: 'Success',
+        message: "Message sent Successfully !",
+    })
+
+    // method for clearing all the data after sending the email
+    const clearAllData = () => {
+        let sampleData = '';
+        [setUserName,setUserEmail,setUserSubject,setUserMessage].forEach(setter => setter(sampleData)); 
+    }
 
     // setting some state regarding EmailJS service's data
     const [userName,setUserName] = useState('');
     const [userEmail,setUserEmail] = useState('');
     const [userSubject,setUserSubject] = useState('');
-    const [userMessage,setMessage] = useState('');
+    const [userMessage,setUserMessage] = useState('');
 
     // details regarding Email JS Services
     const serviceID = "service_ay3pp3s";
     const publicKey = "9RWkKmcNIlGUX9B0O";
+    const templateIDAR = "template_981d9fk";                        // template ID for autoreply
+    const templateIDCU = "template_w06lkrl";                        // To be sent to a Site Owner
+
+    // method for sending and handling Email Requests
+    const submitData = (e) => {
+
+        // preventing the default reload
+        e.preventDefault();
+
+        // checking if the user have already send the data
+        const lastCheck = localStorage.getItem('emailData');
+
+        // sending email if the localStorage is empty
+        if(!lastCheck){
+
+            // setting params for sending data
+            const templateParams = {
+                to_email : userEmail,
+                from_name : userName,
+                user_subject : userSubject,
+                user_message : userMessage
+            }
+
+            // sending autoreply to the user via emailjs services
+            emailjs.send(serviceID,templateIDAR,templateParams,publicKey).then(() => {
+                clearAllData();
+            }).catch(() => {
+                setAlert({show : true,type : 'Warning',message : 'Error in Fetching Data !'});
+                setTimeout(() => {
+                    setAlert(prev => ({ ...prev,show : false}));
+                },2500);
+
+                clearAllData();
+            })
+
+            // sending mail to developer or coder regarding fetching data to him/her
+            emailjs.send(serviceID,templateIDCU,templateParams,publicKey).then(() => {
+                setAlert({ show: true, type: 'Success',message: 'Thanks for your feedback !'})
+                
+                setTimeout(() => {
+                    setAlert(prev => ({ ...prev, show: false}));
+                },2500);
+                clearAllData();
+            }).catch(() => {
+                setAlert({ show: true,type: 'Warning',message: 'Error in Fetching Data !'});
+
+                setTimeout(() => {
+                    setAlert(prev => ({ ...prev, show: false}))
+                },2500);
+                clearAllData();
+            })
+
+            // creating tokens not to send the message multiple times
+            localStorage.setItem("emailData",JSON.stringify({userData: 'DataSaved'}));
+
+        } else {
+            setAlert({ show: true, type: 'Warning', message: 'Data already sent !'})
+            clearAllData();
+
+            setTimeout(() => {
+                setAlert(prev => ({...prev,show: false}));
+            },2500);
+        }
+        
+    }
 
     return (
         <div className="contentContainer xsz:py-14 sm:py-18 xsz:gap-y-5 md:py-16 lg:py-20 xl:py-24 flex flex-col md:gap-4 lg:gap-6 xl:gap-7 items-center bg-tempBG" id="contact">
+
+            <Alert alert={alert} />
 
             {/* Heading of Contact Section */}
             <div className="mainHead flex flex-col xsz:gap-y-1 items-center md:gap-2 lg:gap-3">
@@ -114,32 +193,32 @@ export default function Contact() {
                     <h3 className="xsz:text-lg sm:text-xl lg:text-2xl font-inter xsz:font-bold xsz:text-secondary/80 sm:font-semibold text-secondary/90"> Send Me a Message </h3>
 
                     {/* form regarding information retrival */}
-                    <form className="flex flex-col xsz:gap-3 md:gap-y-3 lg:gap-y-5 justify-start">
+                    <form className="flex flex-col xsz:gap-3 md:gap-y-3 lg:gap-y-5 justify-start" onSubmit={submitData}>
 
                         {/* userName */}
                         <div className="flex flex-col justify-star xsz:gap-3 md:gap-y-2">
                             <label htmlFor="userName" className="font-inter font-normal text-secondary/80 xsz:text-sm lg:text-base"> Name </label>
-                            <input type="text" placeholder="Your Name" id="userName" className="font-poppins xsz:text-[12px] sm:text-sm border-2 md:opacity-80 xsz:border-secondary/30  md:border-secondary/50 focus:border-2 focus:border-site focus:outline-none xsz:rounded-sm xsz:focus:rounded-md xsz:px-2 xsz:py-1 sm:px-3 md:px-3 sm:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required />
+                            <input type="text" placeholder="Your Name" id="userName" value={userName} className="font-poppins xsz:text-[12px] sm:text-sm border-2 md:opacity-80 xsz:border-secondary/30  md:border-secondary/50 focus:border-2 focus:border-site focus:outline-none xsz:rounded-sm xsz:focus:rounded-md xsz:px-2 xsz:py-1 sm:px-3 md:px-3 sm:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required onChange={(e) => { setUserName(e.target.value) }} />
                         </div>
 
                         {/* user's Mail */}
                         <div className="flex flex-col justify-start xsz:gap-3 md:gap-y-2">
                             <label htmlFor="userMail" className="font-inter font-normal text-secondary/80 xsz:text-sm lg:text-base"> Email </label>
-                            <input type="email" placeholder="your.name@gmail.com" id="userMail" className="font-poppins xsz:text-[12px] sm:text-sm border-2 md:opacity-80 xsz:border-secondary/30  md:border-secondary/50 focus:border-2 focus:border-site focus:outline-none xsz:rounded-sm xsz:focus:rounded-md xsz:px-2 xsz:py-1 sm:px-3 md:px-3 sm:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required />
+                            <input type="email" placeholder="your.name@gmail.com" id="userMail" value={userEmail} className="font-poppins xsz:text-[12px] sm:text-sm border-2 md:opacity-80 xsz:border-secondary/30  md:border-secondary/50 focus:border-2 focus:border-site focus:outline-none xsz:rounded-sm xsz:focus:rounded-md xsz:px-2 xsz:py-1 sm:px-3 md:px-3 sm:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required onChange={(e) => { setUserEmail(e.target.value) }} />
                         </div>
 
                         {/* user's Subject or Purpose */}
                         <div className="flex flex-col justify-start xsz:gap-3 md:gap-y-2">
                             <label htmlFor="userSubject" className="font-inter font-normal text-secondary/80 xsz:text-sm lg:text-base"> Subject </label>
-                            <input type="text" placeholder="Subject/Purpose" id="userSubject" className="font-poppins xsz:text-[12px] sm:text-sm border-2 md:opacity-80 xsz:border-secondary/30  md:border-secondary/50 focus:border-2 focus:border-site focus:outline-none xsz:rounded-sm xsz:focus:rounded-md md:px-3 xsz:px-2 xsz:py-1 sm:px-3 sm:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required />
+                            <input type="text" placeholder="Subject/Purpose" id="userSubject" value={userSubject} className="font-poppins xsz:text-[12px] sm:text-sm border-2 md:opacity-80 xsz:border-secondary/30  md:border-secondary/50 focus:border-2 focus:border-site focus:outline-none xsz:rounded-sm xsz:focus:rounded-md md:px-3 xsz:px-2 xsz:py-1 sm:px-3 sm:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required onChange={(e) => { setUserSubject(e.target.value) }} />
                         </div>
 
                         <div className="flex flex-col justify-start xsz:gap-3 md:gap-y-2">
                             <label htmlFor="userMessage" className="font-inter font-normal text-secondary/80 xsz:text-sm lg:text-base"> Message </label>
-                            <textarea type="text" rows="4" placeholder="Your Message here..." id="userMessage" className="resize-none font-poppins xsz:text-[12px] sm:text-sm border-2 md:opacity-80 xsz:border-secondary/30  md:border-secondary/50 focus:border-2 focus:border-site focus:outline-none xsz:rounded-sm xsz:focus:rounded-md xsz:px-2 xsz:py-1 sm:px-3 md:px-3 sm:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" > </textarea>
+                            <textarea type="text" rows="4" placeholder="Your Message here..." id="userMessage" value={userMessage} className="resize-none font-poppins xsz:text-[12px] sm:text-sm border-2 md:opacity-80 xsz:border-secondary/30  md:border-secondary/50 focus:border-2 focus:border-site focus:outline-none xsz:rounded-sm xsz:focus:rounded-md xsz:px-2 xsz:py-1 sm:px-3 md:px-3 sm:py-2 md:rounded-md md:focus:rounded-lg lg:focus:rounded-xl ease-in duration-100" required onChange={(e) => { setUserMessage(e.target.value) }}> </textarea>
                         </div>
 
-                        <button type="button" className="font-inter bg-site/70 xsz:py-1 xsz:rounded-sm sm:rounded-md xsz:shadow-lg active:scale-95 md:py-2 md:rounded-md lg:rounded-lg hover:rounded-xl hover:bg-site/90 cursor-pointer md:shadow-md hover:shadow-lg ease-in duration-150 text-white xsz:text-sm md:mt-2"> Send Message </button>
+                        <button type="submit" className="font-inter bg-site/70 xsz:py-1 xsz:rounded-sm sm:rounded-md xsz:shadow-lg active:scale-95 md:py-2 md:rounded-md lg:rounded-lg hover:rounded-xl hover:bg-site/90 cursor-pointer md:shadow-md hover:shadow-lg ease-in duration-150 text-white xsz:text-sm md:mt-2"> Send Message </button>
 
                     </form>
 

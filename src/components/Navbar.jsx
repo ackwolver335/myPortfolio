@@ -50,7 +50,7 @@ export default function Navbar() {
 
             {/* Menu Icons for Opening & Closing for smaller width devices */}
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-list xsz:w-8 sm:w-9 xsz:p-1 text-white xsz:rounded-sm sm:rounded-md md:hidden active:scale-95 bg-site" viewBox="0 0 16 16" onClick={toggleMenu}>
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
             </svg>
 
         </div>
